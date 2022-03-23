@@ -1,6 +1,7 @@
 from utils import read
 from clases.Movil import Movil
 from clases.Fabricante import Fabricante
+from conexion import interlazar
 
 arrayMoviles = []
 
@@ -21,3 +22,6 @@ for movil in moviles:
 
 for a in arrayMoviles:
     print("Id: "+ a.id+"\nModelo: "+ a.modelo+"\nPrecio: "+ a.precio+"\nSO: "+ a.so+"\nNombre del fabricante: " + a.fabricante.nombre+"\nPais del fabricante: " + a.fabricante.pais+"\n")
+
+
+interlazar.ver()
